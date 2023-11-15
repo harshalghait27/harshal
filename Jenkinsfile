@@ -16,21 +16,11 @@ pipeline    {
 
                        steps {                   
                                        
-                           sh "sudo yum install httpd -y"
+                           echo "this is 23Q1 branch"
 
                        }
                 }
                 
-                stage ("two") {
-
-                       steps {                   
-                                       
-                           sh "sudo service httpd start"
-                           sh "sudo cp -R index.html /var/www/html"
-                           sh "sudo chmod -R 777 /var/www/html/"
-
-                       }
-                }
 
            }
 }

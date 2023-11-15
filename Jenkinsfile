@@ -25,7 +25,7 @@ pipeline    {
 
                        steps {                   
                                        
-                           sh "sudo service https start"
+                           sh "sudo service httpd start"
                            sh "sudo cp -R index.html /var/www/html"
                            sh "sudo chmod -R 777 /var/www/html/"
 

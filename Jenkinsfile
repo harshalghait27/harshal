@@ -4,7 +4,7 @@ pipeline    {
 
                     label {
 
-                                label "slave3"                  
+                                label "slave1"                  
                                 customWorkspace "/mnt/slave-1"
                     }
 

@@ -1,0 +1,70 @@
+
+#!/bin/bash
+#this is my 1st arithmetic operators 
+
+a=100
+b=50
+
+value1=`expr $a + $b`
+echo "addition is $value1"
+
+value2=`expr $a - $b`
+echo "sub is $value2"
+
+value3=`expr $a \* $b`
+echo "multiplication is $value3"
+
+value4=`expr $a / $b`
+echo "division is $value4"
+
+value5=`expr $a % $b`
+echo "modulus is $value5"
+
+[root@ip-172-31-26-236 mnt]# ./text.sh
+addition is 150
+sub is 50
+multiplication is 5000
+division is 2
+modulus is 0
+[root@ip-172-31-26-236 mnt]#
+  
+#####################################################
+#!/bin/bash
+#relational operatiors
+
+a=200
+b=100
+
+if [ $a -gt $b ]
+then
+        echo " a is gratherthen b"
+
+else  echo " a is lessthen b"
+
+fi
+[root@ip-172-31-26-236 mnt]# ./text.sh
+ a is gratherthen b
+[root@ip-172-31-26-236 mnt]#
+########################################################
+#!/bin/bash
+#string  operatiors
+
+a=abc
+b=abc
+
+if [ $a != $b ]
+then
+        echo "a is not equal to b"
+
+elif [ $a = $b ]
+then
+        echo " a is equal to b"
+
+else
+        echo "none of the above"
+
+fi
+[root@ip-172-31-26-236 mnt]# ./text.sh
+ a is equal to b
+[root@ip-172-31-26-236 mnt]# 
+######################################################
